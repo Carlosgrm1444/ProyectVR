@@ -1,0 +1,292 @@
+{
+    "name": "playerMoveInputMap",
+    "maps": [
+        {
+            "name": "normalMove",
+            "id": "7e643907-46d6-455e-9b83-67c5a48f7d75",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "c60075e1-9131-43fe-88f4-ee0f739f61d3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "ab14b206-c553-4891-b69f-012062fc7d58",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Horizontal",
+                    "type": "Value",
+                    "id": "34581584-d1b6-45f4-9995-62d21b9553cd",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Vertical",
+                    "type": "Value",
+                    "id": "e86a3e82-9173-4800-8e4e-7f00f92941f4",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RotateH",
+                    "type": "Value",
+                    "id": "43765d54-39db-434e-8ec3-0f1691a33f26",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RotateV",
+                    "type": "Value",
+                    "id": "4fe33409-8b8a-4043-a2d0-0c822f3a0e0e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "25d8cd6f-9fda-4e3d-974d-d8ea7b7f70f8",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/primarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c8050a7-ca73-4ad6-b6bc-9635603a83f4",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "eje x",
+                    "id": "857a6f27-20f2-49ee-ba8b-432dc8709955",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ade8e6f1-60c6-45e4-886c-7c017fceccf9",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "219e602c-86d8-4304-8aad-eaacd3f58f61",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "eje y",
+                    "id": "53784fef-cbc7-495e-8f03-30764f6ac757",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "2c3f4a7a-cfb2-406b-8e4a-1a0df8711eab",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "9b9ef4f1-abc6-42a2-82d9-d2aa6e46eb2e",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "eje x",
+                    "id": "6197158d-e8ac-4cea-9a17-cce92abd4f02",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateH",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "425b0e5b-9ea4-47ea-b93b-e862b4b03ac5",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1b55be75-602b-47ac-a681-a43ac360b84c",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateH",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "eje y",
+                    "id": "3fbf1045-ad57-48a3-b58e-e68f15312890",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateV",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b250fdb6-4249-4b42-82be-e1565a410ff2",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "6fb9ed75-43e3-4876-bcbe-2a7d411803e2",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateV",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "063bcafd-33d0-422c-b0cd-57b8f44c0a78",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/triggerpressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Generic XR Controller",
+            "bindingGroup": "Generic XR Controller",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{LeftHand}",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>{RightHand}",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<WMRHMD>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Continuous Move",
+            "bindingGroup": "Continuous Move",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Noncontinuous Move",
+            "bindingGroup": "Noncontinuous Move",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
